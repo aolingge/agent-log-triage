@@ -1,0 +1,37 @@
+{
+  "name": "agent-log-triage",
+  "version": "0.1.0",
+  "description": "Score AI agent failure logs for actionable error, command, file, environment, and next-step signals.",
+  "type": "module",
+  "bin": {
+    "agent-log-triage": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node src/cli.js --path fixtures/good.txt --min-score 75"
+  },
+  "files": [
+    "src",
+    "fixtures",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "ai-agent",
+    "logs",
+    "debugging",
+    "developer-tools",
+    "cli"
+  ],
+  "author": "Aolingge",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aolingge/agent-log-triage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aolingge/agent-log-triage/issues"
+  },
+  "homepage": "https://github.com/aolingge/agent-log-triage"
+}
